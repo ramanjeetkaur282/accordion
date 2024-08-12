@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import AccordionPane from './components/AccordionPane';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+      <AccordionPane title="Title 1" initialCollapse={false}>
+        <p>This is content</p>
+      </AccordionPane>
+      <AccordionPane title="Title 2">
+        <p>gjgjhgj</p>
+        </AccordionPane>
     </div>
+   
   );
 }
 
